@@ -1422,6 +1422,7 @@ UINT CCopyDialog::RipFunc( PVOID pParams )
 	}
 
 	// Indicate thread status
+	sndPlaySound(_T("島風カレー_できた～.wav"), SND_ASYNC); 	//あやねるが	できた～っていうやつ
 	pDlg->m_eThreadFinished.SetEvent();
 	pDlg->m_pThread = NULL;
 
